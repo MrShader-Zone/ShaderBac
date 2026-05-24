@@ -36,14 +36,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const countdown = document.getElementById('bacCountdown');
     if (!countdown) return;
 
-    // Proba scrisă la Limba și literatura română, sesiunea a II-a iulie-august 2026.
-    // Ora 09:00, fusul României (UTC+03 în august).
-    const target = new Date('2026-08-10T09:00:00+03:00').getTime();
+    // Proba scrisă la Limba și literatura română, sesiunea iunie-iulie 2026.
+    // Ora 09:00, fusul României (UTC+03 în iunie).
+    const target = new Date('2026-06-29T09:00:00+03:00').getTime();
     const now = Date.now();
     let diff = target - now;
 
     if (diff <= 0) {
-      countdown.textContent = 'Bacul din sesiunea a II-a a început';
+      countdown.textContent = 'Bacul a început';
       return;
     }
 
